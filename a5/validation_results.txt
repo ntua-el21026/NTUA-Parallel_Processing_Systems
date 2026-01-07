@@ -1,0 +1,162 @@
+---------------------------------------------------
+STARTING VALIDATION TESTS @ Wed Jan  7 03:31:27 EET 2026
+Size: 256, Coords: 16, Clusters: 16
+---------------------------------------------------
+
+>>> Testing Implementation: kmeans_cuda_naive
+-------------------------------------
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+dataset_size = 256.00 MB    numObjs = 2097152    numCoords = 16    numClusters = 16, block_size = 256
+
+|-------------Sequential Kmeans-------------|
+
+t_alloc: 5.827904 ms
+
+nloops = 5  : total = 1857.705116 ms
+	-> t_loop_avg = 371.541023 ms
+	-> t_loop_min = 363.652945 ms
+	-> t_loop_max = 376.037121 ms
+
+|-------------------------------------------|
+
+
+|-------------Naive GPU Kmeans--------------|
+
+t_alloc: 0.648975 ms
+
+t_alloc_gpu: 481.699944 ms
+
+t_get_gpu: 66.535950 ms
+
+nloops = 5  : total = 419.113874 ms
+	-> t_loop_avg = 83.822775 ms
+	-> t_loop_min = 47.222853 ms
+	-> t_loop_max = 214.474916 ms
+	-> t_cpu_avg = 29.993773 ms
+	-> t_gpu_avg = 50.587749 ms
+	-> t_transfers_avg = 3.234816 ms
+
+|-------------------------------------------|
+
+Performing validation....PASSED!
+
+>>> Testing Implementation: kmeans_cuda_transpose
+-------------------------------------
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+dataset_size = 256.00 MB    numObjs = 2097152    numCoords = 16    numClusters = 16, block_size = 256
+
+|-------------Sequential Kmeans-------------|
+
+t_alloc: 5.856037 ms
+
+nloops = 5  : total = 1868.948936 ms
+	-> t_loop_avg = 373.789787 ms
+	-> t_loop_min = 371.375084 ms
+	-> t_loop_max = 377.413988 ms
+
+|-------------------------------------------|
+
+
+|-----------Transpose GPU Kmeans------------|
+
+t_alloc: 297.864914 ms
+
+t_alloc_gpu: 562.664986 ms
+
+t_get_gpu: 61.800957 ms
+
+nloops = 5  : total = 334.885836 ms
+	-> t_loop_avg = 66.977167 ms
+	-> t_loop_min = 56.869984 ms
+	-> t_loop_max = 106.828928 ms
+	-> t_cpu_avg = 50.395966 ms
+	-> t_gpu_avg = 13.551760 ms
+	-> t_transfers_avg = 3.024054 ms
+
+|-------------------------------------------|
+
+Performing validation....PASSED!
+
+>>> Testing Implementation: kmeans_cuda_shared
+-------------------------------------
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+dataset_size = 256.00 MB    numObjs = 2097152    numCoords = 16    numClusters = 16, block_size = 256
+
+|-------------Sequential Kmeans-------------|
+
+t_alloc: 5.873919 ms
+
+nloops = 5  : total = 1919.956923 ms
+	-> t_loop_avg = 383.991385 ms
+	-> t_loop_min = 377.632856 ms
+	-> t_loop_max = 387.659073 ms
+
+|-------------------------------------------|
+
+
+|-----------Shared GPU Kmeans------------|
+
+t_alloc: 302.200079 ms
+
+t_alloc_gpu: 552.075148 ms
+
+t_get_gpu: 61.979055 ms
+
+nloops = 5  : total = 229.603052 ms
+	-> t_loop_avg = 45.920610 ms
+	-> t_loop_min = 39.584160 ms
+	-> t_loop_max = 70.631027 ms
+	-> t_cpu_avg = 33.068609 ms
+	-> t_gpu_avg = 9.588385 ms
+	-> t_transfers_avg = 3.257036 ms
+
+|-------------------------------------------|
+
+Performing validation....PASSED!
+
+>>> Testing Implementation: kmeans_cuda_all_gpu
+-------------------------------------
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+dataset_size = 256.00 MB    numObjs = 2097152    numCoords = 16    numClusters = 16, block_size = 256
+
+|-------------Sequential Kmeans-------------|
+
+t_alloc: 5.831957 ms
+
+nloops = 5  : total = 1921.340942 ms
+	-> t_loop_avg = 384.268188 ms
+	-> t_loop_min = 378.818989 ms
+	-> t_loop_max = 389.458895 ms
+
+|-------------------------------------------|
+
+
+|-----------Full-offload GPU Kmeans------------|
+
+t_alloc: 299.875975 ms
+
+t_alloc_gpu: 552.047968 ms
+
+t_get_gpu: 86.324930 ms
+
+nloops = 5  : total = 54.898024 ms
+	-> t_loop_avg = 10.979605 ms
+	-> t_loop_min = 6.295204 ms
+	-> t_loop_max = 23.844957 ms
+	-> t_cpu_avg = 0.000000 ms
+	-> t_gpu_avg = 9.901857 ms
+	-> t_transfers_avg = 0.015020 ms
+
+|-------------------------------------------|
+
+Performing validation....PASSED!
+---------------------------------------------------
+VALIDATION COMPLETED
