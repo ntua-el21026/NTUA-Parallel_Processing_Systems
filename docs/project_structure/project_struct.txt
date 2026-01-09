@@ -1229,12 +1229,73 @@ Parallel_Processing_Systems/
 │   └── docs/
 │       └── pps_exercises_2025_2026.pdf
 ├── a5/
-│   └── docs/
-│       └── pps_exercises_2025_2026.pdf
+│   ├── diagrams/
+│   │   ├── images/
+│   │   │   ├── speedup_coo2_naive_transpose_shmem.png
+│   │   │   ├── speedup_coo2_naive_transpose_shmem_all_gpu.png
+│   │   │   ├── speedup_coo32_naive.png
+│   │   │   ├── speedup_coo32_naive_transpose.png
+│   │   │   ├── speedup_coo32_naive_transpose_shmem.png
+│   │   │   ├── speedup_coo32_naive_transpose_shmem_all_gpu.png
+│   │   │   ├── time_breakdown_coo2_naive_transpose_shmem.png
+│   │   │   ├── time_breakdown_coo2_naive_transpose_shmem_all_gpu.png
+│   │   │   ├── time_breakdown_coo32_naive.png
+│   │   │   ├── time_breakdown_coo32_naive_transpose.png
+│   │   │   ├── time_breakdown_coo32_naive_transpose_shmem.png
+│   │   │   └── time_breakdown_coo32_naive_transpose_shmem_all_gpu.png
+│   │   └── generate_diagrams.py
+│   ├── docs/
+│   │   └── pps_exercises_2025_2026.pdf
+│   ├── Execution_logs/
+│   │   ├── sample_log_Sz-256_Coo-2_Cl-4.csv
+│   │   ├── silver1-V100_Sz-1024_Coo-2_Cl-64.csv
+│   │   ├── silver1-V100_Sz-1024_Coo-32_Cl-64.csv
+│   │   ├── silver1-V100_Sz-256_Coo-16_Cl-16.csv
+│   │   ├── Sz-1024_Coo-2_Cl-64.csv
+│   │   ├── Sz-1024_Coo-32_Cl-64.csv
+│   │   └── Sz-256_Coo-16_Cl-16.csv
+│   ├── Helper_functions/
+│   │   ├── alloc.c
+│   │   ├── alloc.h
+│   │   ├── decls.h
+│   │   ├── error.c
+│   │   ├── error.h
+│   │   ├── file_io.c
+│   │   ├── kmeans.h
+│   │   └── util.c
+│   ├── ObjectDir/
+│   │   └── Dont_Readme
+│   ├── benchmark.err
+│   ├── benchmark.out
+│   ├── cuda_kmeans_all_gpu.cu
+│   ├── cuda_kmeans_all_gpu_delta_reduction.cu
+│   ├── cuda_kmeans_naive.cu
+│   ├── cuda_kmeans_shared.cu
+│   ├── cuda_kmeans_transpose.cu
+│   ├── gpu_run_silver1.sh
+│   ├── main_gpu.cu
+│   ├── main_sec.c
+│   ├── make_kmeans.err
+│   ├── make_kmeans.out
+│   ├── make_on_queue.sh
+│   ├── Makefile
+│   ├── run_on_queue.sh
+│   ├── seq_kmeans.c
+│   ├── validate.err
+│   ├── validate.out
+│   ├── validate_on_queue.sh
+│   └── validation_results.txt
 ├── a6/
+│   ├── benchmarks/
+│   ├── diagrams/
+│   └── docs/
+│       ├── askisi4-2025-2026.pdf
+│       └── pps_exercises_2025_2026.pdf
 ├── docs/
 │   ├── lecture_slides/
+│   │   ├── MPI.pdf
 │   │   ├── OpenMP.pdf
+│   │   ├── Δίκτυα Διασύνδεσης.pdf
 │   │   ├── Εισαγωγή.pdf
 │   │   ├── Παράλληλος Προγραμματισμός σε Επεξεργαστές Γραφικών.pdf
 │   │   ├── Παράλληλος Προγραμματισμός, Μέρος Α.pdf
@@ -1249,9 +1310,9 @@ Parallel_Processing_Systems/
 │   ├── project_structure/
 │   │   ├── project_struct.py
 │   │   └── project_struct.txt
-│   └── report/
+│   └── reports/
 │       ├── final/
-│       │   └── parlab05_report_a1-a4_final.pdf
+│       │   └── parlab05_report_a1-a5_final.pdf
 │       ├── individual/
 │       │   ├── a1/
 │       │   │   ├── report_misc/
@@ -1291,7 +1352,16 @@ Parallel_Processing_Systems/
 │       │   │   ├── parlab05_report_a4_final.pdf
 │       │   │   └── Αναφορά Ανδρέα.docx
 │       │   ├── a5/
+│       │   │   ├── report_misc/
+│       │   │   │   ├── cuda_kmeans_all_gpu.cu.pdf
+│       │   │   │   ├── cuda_kmeans_naive.cu.pdf
+│       │   │   │   ├── cuda_kmeans_shared.cu.pdf
+│       │   │   │   └── cuda_kmeans_transpose.cu.pdf
+│       │   │   ├── parlab05_report_a5.docx
+│       │   │   ├── parlab05_report_a5.pdf
+│       │   │   └── parlab05_report_a5_final.pdf
 │       │   └── a6/
+│       │       └── report_misc/
 │       └── parlab05 - report_template.docx
 ├── shell_scripts/
 │   ├── mount_orion.sh
@@ -1303,4 +1373,4 @@ Parallel_Processing_Systems/
 ├── LICENSE
 └── README.md
 
-Total directories: 170, Total files: 1134
+Total directories: 180, Total files: 1194
