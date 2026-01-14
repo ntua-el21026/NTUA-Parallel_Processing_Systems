@@ -1,0 +1,2 @@
+dataset_size = 256.00 MB    numObjs = 2097152    numCoords = 16    numClusters = 32
+        nloops =  10   (total =  6.9095s)  (per loop =  0.6910s)

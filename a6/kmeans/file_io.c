@@ -24,10 +24,12 @@ double * dataset_generation(int numObjs, int numCoords, long *rank_numObjs)
     /*
      * TODO: Calculate number of objects that each rank will examine (*rank_numObjs)
      */
+    *rank_numObjs = numObjs / size;
+    if (rank < numObjs % size) {
+        (*rank_numObjs)++;
+    }
+
     
-
-
-
     /* allocate space for objects[][] and read all objects */
     int sendcounts[size], displs[size];
     if (rank == 0) {
@@ -39,18 +41,27 @@ double * dataset_generation(int numObjs, int numCoords, long *rank_numObjs)
          *       displs: displacement of each rank's data
          */
 
+        int count = 0;
+        int remainder = numObjs % size;
 
+        for (k = 0; k < size; k++) {
 
-
-
-
-
+            int k_numObjs = numObjs / size;
+            if (k < remainder) {
+                k_numObjs++;
+            }
+            
+            sendcounts[k] = k_numObjs * numCoords;
+            displs[k] = count;
+            count += sendcounts[k];
+        }
     }
 
     /* 
      * TODO: Broadcast the sendcounts and displs arrays to other ranks
      */
-
+    MPI_Bcast(sendcounts, size, MPI_INT, 0, MPI_COMM_WORLD);
+    MPI_Bcast(displs, size, MPI_INT, 0, MPI_COMM_WORLD);
 
 
     /* allocate space for objects[][] (for each rank separately) and read all objects */
@@ -73,6 +84,7 @@ double * dataset_generation(int numObjs, int numCoords, long *rank_numObjs)
     /*
      * TODO: Scatter objects to every rank. (hint: each rank may receive different number of objects)
      */
+    MPI_Scatterv(objects, sendcounts, displs, MPI_DOUBLE, rank_objects, sendcounts[rank], MPI_DOUBLE, 0, MPI_COMM_WORLD);
 
 
     if (rank == 0)
