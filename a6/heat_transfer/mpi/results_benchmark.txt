@@ -1,0 +1,347 @@
+==================================================================
+Starting MPI Benchmarks at Sun Jan 18 22:02:32 UTC 2026
+Config: T=256 iterations (Hardcoded in source or -D defines)
+==================================================================
+##################################################################
+Benchmarking Implementation: jacobi_mpi
+##################################################################
+  --> Matrix Size: 2048x2048
+      Processes: 1 (Grid: 1x1)
+Jacobi X 2048 Y 2048 Px 1 Py 1 Iter 256 ComputationTime 8.417349 TotalTime 8.418046 midpoint 0.000000
+Jacobi X 2048 Y 2048 Px 1 Py 1 Iter 256 ComputationTime 8.413895 TotalTime 8.414653 midpoint 0.000000
+Jacobi X 2048 Y 2048 Px 1 Py 1 Iter 256 ComputationTime 8.409162 TotalTime 8.409866 midpoint 0.000000
+      ----------------------------------
+      Processes: 2 (Grid: 2x1)
+Jacobi X 2048 Y 2048 Px 2 Py 1 Iter 256 ComputationTime 6.025405 TotalTime 6.064350 midpoint 0.000000
+Jacobi X 2048 Y 2048 Px 2 Py 1 Iter 256 ComputationTime 6.020277 TotalTime 6.060259 midpoint 0.000000
+Jacobi X 2048 Y 2048 Px 2 Py 1 Iter 256 ComputationTime 6.021006 TotalTime 6.058448 midpoint 0.000000
+      ----------------------------------
+      Processes: 4 (Grid: 2x2)
+Jacobi X 2048 Y 2048 Px 2 Py 2 Iter 256 ComputationTime 4.313749 TotalTime 4.414277 midpoint 0.000000
+Jacobi X 2048 Y 2048 Px 2 Py 2 Iter 256 ComputationTime 4.308079 TotalTime 4.410741 midpoint 0.000000
+Jacobi X 2048 Y 2048 Px 2 Py 2 Iter 256 ComputationTime 4.311119 TotalTime 4.410318 midpoint 0.000000
+      ----------------------------------
+      Processes: 8 (Grid: 4x2)
+Jacobi X 2048 Y 2048 Px 4 Py 2 Iter 256 ComputationTime 4.237534 TotalTime 4.407661 midpoint 0.000000
+Jacobi X 2048 Y 2048 Px 4 Py 2 Iter 256 ComputationTime 4.217598 TotalTime 4.407193 midpoint 0.000000
+Jacobi X 2048 Y 2048 Px 4 Py 2 Iter 256 ComputationTime 4.128649 TotalTime 4.411255 midpoint 0.000000
+      ----------------------------------
+      Processes: 16 (Grid: 4x4)
+Jacobi X 2048 Y 2048 Px 4 Py 4 Iter 256 ComputationTime 1.872802 TotalTime 2.189319 midpoint 0.000000
+Jacobi X 2048 Y 2048 Px 4 Py 4 Iter 256 ComputationTime 1.791075 TotalTime 2.188864 midpoint 0.000000
+Jacobi X 2048 Y 2048 Px 4 Py 4 Iter 256 ComputationTime 1.870291 TotalTime 2.188343 midpoint 0.000000
+      ----------------------------------
+      Processes: 32 (Grid: 8x4)
+Jacobi X 2048 Y 2048 Px 8 Py 4 Iter 256 ComputationTime 0.459139 TotalTime 0.815035 midpoint 0.000000
+Jacobi X 2048 Y 2048 Px 8 Py 4 Iter 256 ComputationTime 0.509236 TotalTime 0.862393 midpoint 0.000000
+Jacobi X 2048 Y 2048 Px 8 Py 4 Iter 256 ComputationTime 0.495808 TotalTime 0.831753 midpoint 0.000000
+      ----------------------------------
+      Processes: 64 (Grid: 8x8)
+Jacobi X 2048 Y 2048 Px 8 Py 8 Iter 256 ComputationTime 0.055540 TotalTime 0.441435 midpoint 0.000000
+Jacobi X 2048 Y 2048 Px 8 Py 8 Iter 256 ComputationTime 0.058235 TotalTime 0.437466 midpoint 0.000000
+Jacobi X 2048 Y 2048 Px 8 Py 8 Iter 256 ComputationTime 0.061032 TotalTime 0.434414 midpoint 0.000000
+      ----------------------------------
+==================================================================
+  --> Matrix Size: 4096x4096
+      Processes: 1 (Grid: 1x1)
+Jacobi X 4096 Y 4096 Px 1 Py 1 Iter 256 ComputationTime 33.648716 TotalTime 33.649766 midpoint 0.000000
+Jacobi X 4096 Y 4096 Px 1 Py 1 Iter 256 ComputationTime 33.628588 TotalTime 33.629635 midpoint 0.000000
+Jacobi X 4096 Y 4096 Px 1 Py 1 Iter 256 ComputationTime 33.624930 TotalTime 33.625980 midpoint 0.000000
+      ----------------------------------
+      Processes: 2 (Grid: 2x1)
+Jacobi X 4096 Y 4096 Px 2 Py 1 Iter 256 ComputationTime 24.102463 TotalTime 24.155319 midpoint 0.000000
+Jacobi X 4096 Y 4096 Px 2 Py 1 Iter 256 ComputationTime 24.095380 TotalTime 24.152426 midpoint 0.000000
+Jacobi X 4096 Y 4096 Px 2 Py 1 Iter 256 ComputationTime 24.090582 TotalTime 24.147960 midpoint 0.000000
+      ----------------------------------
+      Processes: 4 (Grid: 2x2)
+Jacobi X 4096 Y 4096 Px 2 Py 2 Iter 256 ComputationTime 17.221270 TotalTime 17.468438 midpoint 0.000000
+Jacobi X 4096 Y 4096 Px 2 Py 2 Iter 256 ComputationTime 17.238329 TotalTime 17.488236 midpoint 0.000000
+Jacobi X 4096 Y 4096 Px 2 Py 2 Iter 256 ComputationTime 17.225218 TotalTime 17.472022 midpoint 0.000000
+      ----------------------------------
+      Processes: 8 (Grid: 4x2)
+Jacobi X 4096 Y 4096 Px 4 Py 2 Iter 256 ComputationTime 17.082793 TotalTime 17.652728 midpoint 0.000000
+Jacobi X 4096 Y 4096 Px 4 Py 2 Iter 256 ComputationTime 17.249264 TotalTime 17.639007 midpoint 0.000000
+Jacobi X 4096 Y 4096 Px 4 Py 2 Iter 256 ComputationTime 17.162175 TotalTime 17.645485 midpoint 0.000000
+      ----------------------------------
+      Processes: 16 (Grid: 4x4)
+Jacobi X 4096 Y 4096 Px 4 Py 4 Iter 256 ComputationTime 8.431314 TotalTime 9.486681 midpoint 0.000000
+Jacobi X 4096 Y 4096 Px 4 Py 4 Iter 256 ComputationTime 8.502947 TotalTime 9.473181 midpoint 0.000000
+Jacobi X 4096 Y 4096 Px 4 Py 4 Iter 256 ComputationTime 8.508650 TotalTime 9.472159 midpoint 0.000000
+      ----------------------------------
+      Processes: 32 (Grid: 8x4)
+Jacobi X 4096 Y 4096 Px 8 Py 4 Iter 256 ComputationTime 4.517473 TotalTime 5.622675 midpoint 0.000000
+Jacobi X 4096 Y 4096 Px 8 Py 4 Iter 256 ComputationTime 4.519047 TotalTime 5.619255 midpoint 0.000000
+Jacobi X 4096 Y 4096 Px 8 Py 4 Iter 256 ComputationTime 4.458803 TotalTime 5.638676 midpoint 0.000000
+      ----------------------------------
+      Processes: 64 (Grid: 8x8)
+Jacobi X 4096 Y 4096 Px 8 Py 8 Iter 256 ComputationTime 3.148493 TotalTime 4.500169 midpoint 0.000000
+Jacobi X 4096 Y 4096 Px 8 Py 8 Iter 256 ComputationTime 3.196858 TotalTime 4.483896 midpoint 0.000000
+Jacobi X 4096 Y 4096 Px 8 Py 8 Iter 256 ComputationTime 3.200446 TotalTime 4.492598 midpoint 0.000000
+      ----------------------------------
+==================================================================
+  --> Matrix Size: 6144x6144
+      Processes: 1 (Grid: 1x1)
+Jacobi X 6144 Y 6144 Px 1 Py 1 Iter 256 ComputationTime 75.725125 TotalTime 75.726228 midpoint 0.000000
+Jacobi X 6144 Y 6144 Px 1 Py 1 Iter 256 ComputationTime 75.724101 TotalTime 75.725176 midpoint 0.000000
+Jacobi X 6144 Y 6144 Px 1 Py 1 Iter 256 ComputationTime 75.655655 TotalTime 75.656800 midpoint 0.000000
+      ----------------------------------
+      Processes: 2 (Grid: 2x1)
+Jacobi X 6144 Y 6144 Px 2 Py 1 Iter 256 ComputationTime 54.200646 TotalTime 54.278484 midpoint 0.000000
+Jacobi X 6144 Y 6144 Px 2 Py 1 Iter 256 ComputationTime 54.183119 TotalTime 54.270031 midpoint 0.000000
+Jacobi X 6144 Y 6144 Px 2 Py 1 Iter 256 ComputationTime 54.202909 TotalTime 54.280712 midpoint 0.000000
+      ----------------------------------
+      Processes: 4 (Grid: 2x2)
+Jacobi X 6144 Y 6144 Px 2 Py 2 Iter 256 ComputationTime 38.835371 TotalTime 39.301361 midpoint 0.000000
+Jacobi X 6144 Y 6144 Px 2 Py 2 Iter 256 ComputationTime 38.835284 TotalTime 39.297795 midpoint 0.000000
+Jacobi X 6144 Y 6144 Px 2 Py 2 Iter 256 ComputationTime 38.834489 TotalTime 39.323726 midpoint 0.000000
+      ----------------------------------
+      Processes: 8 (Grid: 4x2)
+Jacobi X 6144 Y 6144 Px 4 Py 2 Iter 256 ComputationTime 38.428895 TotalTime 39.612369 midpoint 0.000000
+Jacobi X 6144 Y 6144 Px 4 Py 2 Iter 256 ComputationTime 38.700240 TotalTime 39.639232 midpoint 0.000000
+Jacobi X 6144 Y 6144 Px 4 Py 2 Iter 256 ComputationTime 38.443452 TotalTime 39.619954 midpoint 0.000000
+      ----------------------------------
+      Processes: 16 (Grid: 4x4)
+Jacobi X 6144 Y 6144 Px 4 Py 4 Iter 256 ComputationTime 19.336595 TotalTime 21.230121 midpoint 0.000000
+Jacobi X 6144 Y 6144 Px 4 Py 4 Iter 256 ComputationTime 19.322610 TotalTime 21.265021 midpoint 0.000000
+Jacobi X 6144 Y 6144 Px 4 Py 4 Iter 256 ComputationTime 19.321329 TotalTime 21.279165 midpoint 0.000000
+      ----------------------------------
+      Processes: 32 (Grid: 8x4)
+Jacobi X 6144 Y 6144 Px 8 Py 4 Iter 256 ComputationTime 10.298751 TotalTime 12.605279 midpoint 0.000000
+Jacobi X 6144 Y 6144 Px 8 Py 4 Iter 256 ComputationTime 10.234027 TotalTime 12.619265 midpoint 0.000000
+Jacobi X 6144 Y 6144 Px 8 Py 4 Iter 256 ComputationTime 10.232863 TotalTime 12.610079 midpoint 0.000000
+      ----------------------------------
+      Processes: 64 (Grid: 8x8)
+Jacobi X 6144 Y 6144 Px 8 Py 8 Iter 256 ComputationTime 8.224335 TotalTime 10.765332 midpoint 0.000000
+Jacobi X 6144 Y 6144 Px 8 Py 8 Iter 256 ComputationTime 8.129947 TotalTime 10.727508 midpoint 0.000000
+Jacobi X 6144 Y 6144 Px 8 Py 8 Iter 256 ComputationTime 8.067665 TotalTime 10.725945 midpoint 0.000000
+      ----------------------------------
+==================================================================
+##################################################################
+Benchmarking Implementation: gauss_mpi
+##################################################################
+  --> Matrix Size: 2048x2048
+      Processes: 1 (Grid: 1x1)
+GaussSeidelSOR X 2048 Y 2048 Px 1 Py 1 Iter 256 ComputationTime 11.091652 TotalTime 11.092399 midpoint 0.849018
+GaussSeidelSOR X 2048 Y 2048 Px 1 Py 1 Iter 256 ComputationTime 11.091651 TotalTime 11.092391 midpoint 0.849018
+GaussSeidelSOR X 2048 Y 2048 Px 1 Py 1 Iter 256 ComputationTime 11.092650 TotalTime 11.093411 midpoint 0.849018
+      ----------------------------------
+      Processes: 2 (Grid: 2x1)
+GaussSeidelSOR X 2048 Y 2048 Px 2 Py 1 Iter 256 ComputationTime 6.270967 TotalTime 6.311035 midpoint 0.417755
+GaussSeidelSOR X 2048 Y 2048 Px 2 Py 1 Iter 256 ComputationTime 6.272118 TotalTime 6.311421 midpoint 0.417755
+GaussSeidelSOR X 2048 Y 2048 Px 2 Py 1 Iter 256 ComputationTime 6.270116 TotalTime 6.317930 midpoint 0.417755
+      ----------------------------------
+      Processes: 4 (Grid: 2x2)
+GaussSeidelSOR X 2048 Y 2048 Px 2 Py 2 Iter 256 ComputationTime 4.355061 TotalTime 4.453422 midpoint -3.218205
+GaussSeidelSOR X 2048 Y 2048 Px 2 Py 2 Iter 256 ComputationTime 4.354782 TotalTime 4.455252 midpoint -3.218205
+GaussSeidelSOR X 2048 Y 2048 Px 2 Py 2 Iter 256 ComputationTime 4.363550 TotalTime 4.461632 midpoint -3.218205
+      ----------------------------------
+      Processes: 8 (Grid: 4x2)
+GaussSeidelSOR X 2048 Y 2048 Px 4 Py 2 Iter 256 ComputationTime 4.085954 TotalTime 4.468675 midpoint 678.711268
+GaussSeidelSOR X 2048 Y 2048 Px 4 Py 2 Iter 256 ComputationTime 4.300533 TotalTime 4.448376 midpoint 678.711268
+GaussSeidelSOR X 2048 Y 2048 Px 4 Py 2 Iter 256 ComputationTime 4.287646 TotalTime 4.448490 midpoint 678.711268
+      ----------------------------------
+      Processes: 16 (Grid: 4x4)
+GaussSeidelSOR X 2048 Y 2048 Px 4 Py 4 Iter 256 ComputationTime 1.900582 TotalTime 2.216641 midpoint -26245.796733
+GaussSeidelSOR X 2048 Y 2048 Px 4 Py 4 Iter 256 ComputationTime 1.915566 TotalTime 2.211471 midpoint -26245.796733
+GaussSeidelSOR X 2048 Y 2048 Px 4 Py 4 Iter 256 ComputationTime 1.898430 TotalTime 2.202776 midpoint -26245.796733
+      ----------------------------------
+      Processes: 32 (Grid: 8x4)
+GaussSeidelSOR X 2048 Y 2048 Px 8 Py 4 Iter 256 ComputationTime 0.481041 TotalTime 0.829616 midpoint -152871398.267204
+GaussSeidelSOR X 2048 Y 2048 Px 8 Py 4 Iter 256 ComputationTime 0.509951 TotalTime 0.854265 midpoint -152871398.267204
+GaussSeidelSOR X 2048 Y 2048 Px 8 Py 4 Iter 256 ComputationTime 0.525926 TotalTime 0.864238 midpoint -152871398.267204
+      ----------------------------------
+      Processes: 64 (Grid: 8x8)
+GaussSeidelSOR X 2048 Y 2048 Px 8 Py 8 Iter 256 ComputationTime 0.180220 TotalTime 0.568754 midpoint -84909365024.421570
+GaussSeidelSOR X 2048 Y 2048 Px 8 Py 8 Iter 256 ComputationTime 0.179913 TotalTime 0.562702 midpoint -84909365024.421570
+GaussSeidelSOR X 2048 Y 2048 Px 8 Py 8 Iter 256 ComputationTime 0.179802 TotalTime 0.565382 midpoint -84909365024.421570
+      ----------------------------------
+==================================================================
+  --> Matrix Size: 4096x4096
+      Processes: 1 (Grid: 1x1)
+GaussSeidelSOR X 4096 Y 4096 Px 1 Py 1 Iter 256 ComputationTime 44.357218 TotalTime 44.358287 midpoint 0.900935
+GaussSeidelSOR X 4096 Y 4096 Px 1 Py 1 Iter 256 ComputationTime 44.365899 TotalTime 44.366931 midpoint 0.900935
+GaussSeidelSOR X 4096 Y 4096 Px 1 Py 1 Iter 256 ComputationTime 44.359696 TotalTime 44.360766 midpoint 0.900935
+      ----------------------------------
+      Processes: 2 (Grid: 2x1)
+GaussSeidelSOR X 4096 Y 4096 Px 2 Py 1 Iter 256 ComputationTime 25.038687 TotalTime 25.097155 midpoint 0.443446
+GaussSeidelSOR X 4096 Y 4096 Px 2 Py 1 Iter 256 ComputationTime 25.037930 TotalTime 25.101386 midpoint 0.443446
+GaussSeidelSOR X 4096 Y 4096 Px 2 Py 1 Iter 256 ComputationTime 25.029027 TotalTime 25.094066 midpoint 0.443446
+      ----------------------------------
+      Processes: 4 (Grid: 2x2)
+GaussSeidelSOR X 4096 Y 4096 Px 2 Py 2 Iter 256 ComputationTime 17.324434 TotalTime 17.578662 midpoint -3.438423
+GaussSeidelSOR X 4096 Y 4096 Px 2 Py 2 Iter 256 ComputationTime 17.337637 TotalTime 17.587665 midpoint -3.438423
+GaussSeidelSOR X 4096 Y 4096 Px 2 Py 2 Iter 256 ComputationTime 17.332759 TotalTime 17.579865 midpoint -3.438423
+      ----------------------------------
+      Processes: 8 (Grid: 4x2)
+GaussSeidelSOR X 4096 Y 4096 Px 4 Py 2 Iter 256 ComputationTime 17.312240 TotalTime 17.761735 midpoint 718.275361
+GaussSeidelSOR X 4096 Y 4096 Px 4 Py 2 Iter 256 ComputationTime 17.254702 TotalTime 17.777292 midpoint 718.275361
+GaussSeidelSOR X 4096 Y 4096 Px 4 Py 2 Iter 256 ComputationTime 17.386128 TotalTime 17.759460 midpoint 718.275361
+      ----------------------------------
+      Processes: 16 (Grid: 4x4)
+GaussSeidelSOR X 4096 Y 4096 Px 4 Py 4 Iter 256 ComputationTime 8.660920 TotalTime 9.556032 midpoint -28680.326323
+GaussSeidelSOR X 4096 Y 4096 Px 4 Py 4 Iter 256 ComputationTime 8.578632 TotalTime 9.558344 midpoint -28680.326323
+GaussSeidelSOR X 4096 Y 4096 Px 4 Py 4 Iter 256 ComputationTime 8.630829 TotalTime 9.556423 midpoint -28680.326323
+      ----------------------------------
+      Processes: 32 (Grid: 8x4)
+GaussSeidelSOR X 4096 Y 4096 Px 8 Py 4 Iter 256 ComputationTime 4.514218 TotalTime 5.684865 midpoint -165842508.263047
+GaussSeidelSOR X 4096 Y 4096 Px 8 Py 4 Iter 256 ComputationTime 4.534693 TotalTime 5.682537 midpoint -165842508.263047
+GaussSeidelSOR X 4096 Y 4096 Px 8 Py 4 Iter 256 ComputationTime 4.510323 TotalTime 5.686250 midpoint -165842508.263047
+      ----------------------------------
+      Processes: 64 (Grid: 8x8)
+GaussSeidelSOR X 4096 Y 4096 Px 8 Py 8 Iter 256 ComputationTime 3.223900 TotalTime 4.510389 midpoint -95222056443.548157
+GaussSeidelSOR X 4096 Y 4096 Px 8 Py 8 Iter 256 ComputationTime 3.211610 TotalTime 4.522589 midpoint -95222056443.548157
+GaussSeidelSOR X 4096 Y 4096 Px 8 Py 8 Iter 256 ComputationTime 3.198464 TotalTime 4.522291 midpoint -95222056443.548157
+      ----------------------------------
+==================================================================
+  --> Matrix Size: 6144x6144
+      Processes: 1 (Grid: 1x1)
+GaussSeidelSOR X 6144 Y 6144 Px 1 Py 1 Iter 256 ComputationTime 99.677713 TotalTime 99.678863 midpoint 0.942706
+GaussSeidelSOR X 6144 Y 6144 Px 1 Py 1 Iter 256 ComputationTime 99.681224 TotalTime 99.682367 midpoint 0.942706
+GaussSeidelSOR X 6144 Y 6144 Px 1 Py 1 Iter 256 ComputationTime 99.675687 TotalTime 99.676770 midpoint 0.942706
+      ----------------------------------
+      Processes: 2 (Grid: 2x1)
+GaussSeidelSOR X 6144 Y 6144 Px 2 Py 1 Iter 256 ComputationTime 56.249488 TotalTime 56.352798 midpoint 0.473961
+GaussSeidelSOR X 6144 Y 6144 Px 2 Py 1 Iter 256 ComputationTime 56.250640 TotalTime 56.347176 midpoint 0.473961
+GaussSeidelSOR X 6144 Y 6144 Px 2 Py 1 Iter 256 ComputationTime 56.253930 TotalTime 56.349283 midpoint 0.473961
+      ----------------------------------
+      Processes: 4 (Grid: 2x2)
+GaussSeidelSOR X 6144 Y 6144 Px 2 Py 2 Iter 256 ComputationTime 39.062301 TotalTime 39.541090 midpoint -3.506684
+GaussSeidelSOR X 6144 Y 6144 Px 2 Py 2 Iter 256 ComputationTime 39.049571 TotalTime 39.534521 midpoint -3.506684
+GaussSeidelSOR X 6144 Y 6144 Px 2 Py 2 Iter 256 ComputationTime 39.060802 TotalTime 39.537188 midpoint -3.506684
+      ----------------------------------
+      Processes: 8 (Grid: 4x2)
+GaussSeidelSOR X 6144 Y 6144 Px 4 Py 2 Iter 256 ComputationTime 39.017114 TotalTime 39.841955 midpoint 732.309891
+GaussSeidelSOR X 6144 Y 6144 Px 4 Py 2 Iter 256 ComputationTime 38.957471 TotalTime 39.804059 midpoint 732.309891
+GaussSeidelSOR X 6144 Y 6144 Px 4 Py 2 Iter 256 ComputationTime 39.011167 TotalTime 39.818964 midpoint 732.309891
+      ----------------------------------
+      Processes: 16 (Grid: 4x4)
+GaussSeidelSOR X 6144 Y 6144 Px 4 Py 4 Iter 256 ComputationTime 19.450545 TotalTime 21.420517 midpoint -29558.227268
+GaussSeidelSOR X 6144 Y 6144 Px 4 Py 4 Iter 256 ComputationTime 19.510057 TotalTime 21.438299 midpoint -29558.227268
+GaussSeidelSOR X 6144 Y 6144 Px 4 Py 4 Iter 256 ComputationTime 19.483132 TotalTime 21.411289 midpoint -29558.227268
+      ----------------------------------
+      Processes: 32 (Grid: 8x4)
+GaussSeidelSOR X 6144 Y 6144 Px 8 Py 4 Iter 256 ComputationTime 10.264963 TotalTime 12.751865 midpoint -170235602.631352
+GaussSeidelSOR X 6144 Y 6144 Px 8 Py 4 Iter 256 ComputationTime 10.268823 TotalTime 12.741116 midpoint -170235602.631352
+GaussSeidelSOR X 6144 Y 6144 Px 8 Py 4 Iter 256 ComputationTime 10.269348 TotalTime 12.757808 midpoint -170235602.631352
+      ----------------------------------
+      Processes: 64 (Grid: 8x8)
+GaussSeidelSOR X 6144 Y 6144 Px 8 Py 8 Iter 256 ComputationTime 8.137669 TotalTime 10.835815 midpoint -99055617000.044250
+GaussSeidelSOR X 6144 Y 6144 Px 8 Py 8 Iter 256 ComputationTime 8.213350 TotalTime 10.857595 midpoint -99055617000.044250
+GaussSeidelSOR X 6144 Y 6144 Px 8 Py 8 Iter 256 ComputationTime 8.087094 TotalTime 10.878319 midpoint -99055617000.044250
+      ----------------------------------
+==================================================================
+##################################################################
+Benchmarking Implementation: redblack_mpi
+##################################################################
+  --> Matrix Size: 2048x2048
+      Processes: 1 (Grid: 1x1)
+RedBlackSOR X 2048 Y 2048 Px 1 Py 1 Iter 256 ComputationTime 19.123314 TotalTime 19.124215 midpoint 0.000000
+RedBlackSOR X 2048 Y 2048 Px 1 Py 1 Iter 256 ComputationTime 19.128713 TotalTime 19.129694 midpoint 0.000000
+RedBlackSOR X 2048 Y 2048 Px 1 Py 1 Iter 256 ComputationTime 19.114920 TotalTime 19.115848 midpoint 0.000000
+      ----------------------------------
+      Processes: 2 (Grid: 2x1)
+RedBlackSOR X 2048 Y 2048 Px 2 Py 1 Iter 256 ComputationTime 12.204487 TotalTime 12.241651 midpoint 0.000000
+RedBlackSOR X 2048 Y 2048 Px 2 Py 1 Iter 256 ComputationTime 12.212968 TotalTime 12.251718 midpoint 0.000000
+RedBlackSOR X 2048 Y 2048 Px 2 Py 1 Iter 256 ComputationTime 12.222205 TotalTime 12.258472 midpoint 0.000000
+      ----------------------------------
+      Processes: 4 (Grid: 2x2)
+RedBlackSOR X 2048 Y 2048 Px 2 Py 2 Iter 256 ComputationTime 8.625980 TotalTime 8.718710 midpoint 0.000000
+RedBlackSOR X 2048 Y 2048 Px 2 Py 2 Iter 256 ComputationTime 8.615759 TotalTime 8.722870 midpoint 0.000000
+RedBlackSOR X 2048 Y 2048 Px 2 Py 2 Iter 256 ComputationTime 8.621262 TotalTime 8.716276 midpoint 0.000000
+      ----------------------------------
+      Processes: 8 (Grid: 4x2)
+RedBlackSOR X 2048 Y 2048 Px 4 Py 2 Iter 256 ComputationTime 8.261150 TotalTime 8.474790 midpoint 0.000000
+RedBlackSOR X 2048 Y 2048 Px 4 Py 2 Iter 256 ComputationTime 8.314899 TotalTime 8.481552 midpoint 0.000000
+RedBlackSOR X 2048 Y 2048 Px 4 Py 2 Iter 256 ComputationTime 8.235342 TotalTime 8.473962 midpoint 0.000000
+      ----------------------------------
+      Processes: 16 (Grid: 4x4)
+RedBlackSOR X 2048 Y 2048 Px 4 Py 4 Iter 256 ComputationTime 3.468325 TotalTime 3.881828 midpoint 0.000000
+RedBlackSOR X 2048 Y 2048 Px 4 Py 4 Iter 256 ComputationTime 3.624090 TotalTime 3.886425 midpoint 0.000000
+RedBlackSOR X 2048 Y 2048 Px 4 Py 4 Iter 256 ComputationTime 3.602821 TotalTime 3.892219 midpoint 0.000000
+      ----------------------------------
+      Processes: 32 (Grid: 8x4)
+RedBlackSOR X 2048 Y 2048 Px 8 Py 4 Iter 256 ComputationTime 0.850350 TotalTime 1.258846 midpoint 0.000000
+RedBlackSOR X 2048 Y 2048 Px 8 Py 4 Iter 256 ComputationTime 0.827424 TotalTime 1.233282 midpoint 0.000000
+RedBlackSOR X 2048 Y 2048 Px 8 Py 4 Iter 256 ComputationTime 0.854517 TotalTime 1.224349 midpoint 0.000000
+      ----------------------------------
+      Processes: 64 (Grid: 8x8)
+RedBlackSOR X 2048 Y 2048 Px 8 Py 8 Iter 256 ComputationTime 0.129869 TotalTime 0.508952 midpoint 0.000000
+RedBlackSOR X 2048 Y 2048 Px 8 Py 8 Iter 256 ComputationTime 0.143990 TotalTime 0.534848 midpoint 0.000000
+RedBlackSOR X 2048 Y 2048 Px 8 Py 8 Iter 256 ComputationTime 0.130581 TotalTime 0.517005 midpoint 0.000000
+      ----------------------------------
+==================================================================
+  --> Matrix Size: 4096x4096
+      Processes: 1 (Grid: 1x1)
+RedBlackSOR X 4096 Y 4096 Px 1 Py 1 Iter 256 ComputationTime 76.728858 TotalTime 76.730014 midpoint 0.000000
+RedBlackSOR X 4096 Y 4096 Px 1 Py 1 Iter 256 ComputationTime 76.744496 TotalTime 76.745629 midpoint 0.000000
+RedBlackSOR X 4096 Y 4096 Px 1 Py 1 Iter 256 ComputationTime 76.720457 TotalTime 76.721601 midpoint 0.000000
+      ----------------------------------
+      Processes: 2 (Grid: 2x1)
+RedBlackSOR X 4096 Y 4096 Px 2 Py 1 Iter 256 ComputationTime 48.790134 TotalTime 48.855445 midpoint 0.000000
+RedBlackSOR X 4096 Y 4096 Px 2 Py 1 Iter 256 ComputationTime 48.792411 TotalTime 48.860550 midpoint 0.000000
+RedBlackSOR X 4096 Y 4096 Px 2 Py 1 Iter 256 ComputationTime 48.794579 TotalTime 48.861439 midpoint 0.000000
+      ----------------------------------
+      Processes: 4 (Grid: 2x2)
+RedBlackSOR X 4096 Y 4096 Px 2 Py 2 Iter 256 ComputationTime 34.449676 TotalTime 34.694218 midpoint 0.000000
+RedBlackSOR X 4096 Y 4096 Px 2 Py 2 Iter 256 ComputationTime 34.448918 TotalTime 34.688273 midpoint 0.000000
+RedBlackSOR X 4096 Y 4096 Px 2 Py 2 Iter 256 ComputationTime 34.447713 TotalTime 34.692201 midpoint 0.000000
+      ----------------------------------
+      Processes: 8 (Grid: 4x2)
+RedBlackSOR X 4096 Y 4096 Px 4 Py 2 Iter 256 ComputationTime 34.378493 TotalTime 34.907703 midpoint 0.000000
+RedBlackSOR X 4096 Y 4096 Px 4 Py 2 Iter 256 ComputationTime 34.347981 TotalTime 34.921689 midpoint 0.000000
+RedBlackSOR X 4096 Y 4096 Px 4 Py 2 Iter 256 ComputationTime 34.287927 TotalTime 34.916556 midpoint 0.000000
+      ----------------------------------
+      Processes: 16 (Grid: 4x4)
+RedBlackSOR X 4096 Y 4096 Px 4 Py 4 Iter 256 ComputationTime 17.131886 TotalTime 18.043847 midpoint 0.000000
+RedBlackSOR X 4096 Y 4096 Px 4 Py 4 Iter 256 ComputationTime 16.842407 TotalTime 18.092537 midpoint 0.000000
+RedBlackSOR X 4096 Y 4096 Px 4 Py 4 Iter 256 ComputationTime 16.906198 TotalTime 18.073684 midpoint 0.000000
+      ----------------------------------
+      Processes: 32 (Grid: 8x4)
+RedBlackSOR X 4096 Y 4096 Px 8 Py 4 Iter 256 ComputationTime 8.820726 TotalTime 9.956816 midpoint 0.000000
+RedBlackSOR X 4096 Y 4096 Px 8 Py 4 Iter 256 ComputationTime 8.583255 TotalTime 9.691702 midpoint 0.000000
+RedBlackSOR X 4096 Y 4096 Px 8 Py 4 Iter 256 ComputationTime 8.566163 TotalTime 9.696880 midpoint 0.000000
+      ----------------------------------
+      Processes: 64 (Grid: 8x8)
+RedBlackSOR X 4096 Y 4096 Px 8 Py 8 Iter 256 ComputationTime 5.826447 TotalTime 7.264559 midpoint 0.000000
+RedBlackSOR X 4096 Y 4096 Px 8 Py 8 Iter 256 ComputationTime 5.864274 TotalTime 7.310271 midpoint 0.000000
+RedBlackSOR X 4096 Y 4096 Px 8 Py 8 Iter 256 ComputationTime 5.918884 TotalTime 7.208786 midpoint 0.000000
+      ----------------------------------
+==================================================================
+  --> Matrix Size: 6144x6144
+      Processes: 1 (Grid: 1x1)
+RedBlackSOR X 6144 Y 6144 Px 1 Py 1 Iter 256 ComputationTime 172.327218 TotalTime 172.328439 midpoint 0.000000
+RedBlackSOR X 6144 Y 6144 Px 1 Py 1 Iter 256 ComputationTime 172.302572 TotalTime 172.303822 midpoint 0.000000
+RedBlackSOR X 6144 Y 6144 Px 1 Py 1 Iter 256 ComputationTime 172.319447 TotalTime 172.320662 midpoint 0.000000
+      ----------------------------------
+      Processes: 2 (Grid: 2x1)
+RedBlackSOR X 6144 Y 6144 Px 2 Py 1 Iter 256 ComputationTime 109.880623 TotalTime 109.947514 midpoint 0.000000
+RedBlackSOR X 6144 Y 6144 Px 2 Py 1 Iter 256 ComputationTime 109.864688 TotalTime 109.940477 midpoint 0.000000
+RedBlackSOR X 6144 Y 6144 Px 2 Py 1 Iter 256 ComputationTime 109.885405 TotalTime 109.960638 midpoint 0.000000
+      ----------------------------------
+      Processes: 4 (Grid: 2x2)
+RedBlackSOR X 6144 Y 6144 Px 2 Py 2 Iter 256 ComputationTime 77.651625 TotalTime 78.121146 midpoint 0.000000
+RedBlackSOR X 6144 Y 6144 Px 2 Py 2 Iter 256 ComputationTime 77.646590 TotalTime 78.119604 midpoint 0.000000
+RedBlackSOR X 6144 Y 6144 Px 2 Py 2 Iter 256 ComputationTime 77.673884 TotalTime 78.145014 midpoint 0.000000
+      ----------------------------------
+      Processes: 8 (Grid: 4x2)
+RedBlackSOR X 6144 Y 6144 Px 4 Py 2 Iter 256 ComputationTime 77.253427 TotalTime 78.520256 midpoint 0.000000
+RedBlackSOR X 6144 Y 6144 Px 4 Py 2 Iter 256 ComputationTime 77.569339 TotalTime 78.561888 midpoint 0.000000
+RedBlackSOR X 6144 Y 6144 Px 4 Py 2 Iter 256 ComputationTime 77.563324 TotalTime 78.565705 midpoint 0.000000
+      ----------------------------------
+      Processes: 16 (Grid: 4x4)
+RedBlackSOR X 6144 Y 6144 Px 4 Py 4 Iter 256 ComputationTime 38.833236 TotalTime 40.755779 midpoint 0.000000
+RedBlackSOR X 6144 Y 6144 Px 4 Py 4 Iter 256 ComputationTime 38.767809 TotalTime 40.782936 midpoint 0.000000
+RedBlackSOR X 6144 Y 6144 Px 4 Py 4 Iter 256 ComputationTime 38.710022 TotalTime 40.741811 midpoint 0.000000
+      ----------------------------------
+      Processes: 32 (Grid: 8x4)
+RedBlackSOR X 6144 Y 6144 Px 8 Py 4 Iter 256 ComputationTime 20.416710 TotalTime 22.730432 midpoint 0.000000
+RedBlackSOR X 6144 Y 6144 Px 8 Py 4 Iter 256 ComputationTime 20.401499 TotalTime 22.745358 midpoint 0.000000
+RedBlackSOR X 6144 Y 6144 Px 8 Py 4 Iter 256 ComputationTime 20.554361 TotalTime 22.879387 midpoint 0.000000
+      ----------------------------------
+      Processes: 64 (Grid: 8x8)
+RedBlackSOR X 6144 Y 6144 Px 8 Py 8 Iter 256 ComputationTime 16.062918 TotalTime 18.603704 midpoint 0.000000
+RedBlackSOR X 6144 Y 6144 Px 8 Py 8 Iter 256 ComputationTime 15.907305 TotalTime 18.397734 midpoint 0.000000
+RedBlackSOR X 6144 Y 6144 Px 8 Py 8 Iter 256 ComputationTime 15.971726 TotalTime 18.408339 midpoint 0.000000
+      ----------------------------------
+==================================================================
+Benchmarks finished at Sun Jan 18 23:29:31 UTC 2026

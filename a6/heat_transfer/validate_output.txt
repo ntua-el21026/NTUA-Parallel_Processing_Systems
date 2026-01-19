@@ -1,0 +1,21 @@
+==========================================================
+      GLOBAL VALIDATION SCRIPT (Parent Directory)
+      Serial Path: ./serial/
+      MPI Path:    ./mpi/
+      Flag:        -DTEST_CONV
+==========================================================
+Starting Compilation...
+[1/3] Compiling Jacobi...
+----------------------------------------------------------
+
+##########################################################
+VALIDATING: Jacobi
+##########################################################
+>>> Reference (Serial Code - 1 Process):
+Jacobi X 512 Y 512 Iter 236000 Time 399.697749 midpoint 2.774119
+      ---------------- vs ----------------
+>>> Target (MPI Code - 64 Processes):
+Jacobi X 512 Y 512 Px 8 Py 8 Iter 236001 ComputationTime 3.192382 TotalTime 40.515665 ConvergenceTime 1.261121 midpoint 2.774119
+##########################################################
+
+All validations finished 
