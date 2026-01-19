@@ -67,6 +67,7 @@ Parallel_Processing_Systems/
 │   ├── Makefile
 │   ├── makejob.err
 │   ├── makejob.out
+│   ├── README.md
 │   └── run_on_queue.sh
 ├── a2/
 │   ├── docs/
@@ -130,152 +131,153 @@ Parallel_Processing_Systems/
 │   │   ├── run_on_queue.sh
 │   │   ├── util.c
 │   │   └── util.h
-│   └── kmeans/
-│       ├── benchmarks/
-│       │   ├── naive/
-│       │   │   ├── aff/
-│       │   │   │   ├── S256_N16_C32_L10_T1/
-│       │   │   │   │   ├── meta.txt
-│       │   │   │   │   └── output.txt
-│       │   │   │   ├── S256_N16_C32_L10_T16/
-│       │   │   │   │   ├── meta.txt
-│       │   │   │   │   └── output.txt
-│       │   │   │   ├── S256_N16_C32_L10_T2/
-│       │   │   │   │   ├── meta.txt
-│       │   │   │   │   └── output.txt
-│       │   │   │   ├── S256_N16_C32_L10_T32/
-│       │   │   │   │   ├── meta.txt
-│       │   │   │   │   └── output.txt
-│       │   │   │   ├── S256_N16_C32_L10_T4/
-│       │   │   │   │   ├── meta.txt
-│       │   │   │   │   └── output.txt
-│       │   │   │   ├── S256_N16_C32_L10_T64/
-│       │   │   │   │   ├── meta.txt
-│       │   │   │   │   └── output.txt
-│       │   │   │   └── S256_N16_C32_L10_T8/
-│       │   │   │       ├── meta.txt
-│       │   │   │       └── output.txt
-│       │   │   └── noaff/
-│       │   │       ├── S256_N16_C32_L10_T1/
-│       │   │       │   ├── meta.txt
-│       │   │       │   └── output.txt
-│       │   │       ├── S256_N16_C32_L10_T16/
-│       │   │       │   ├── meta.txt
-│       │   │       │   └── output.txt
-│       │   │       ├── S256_N16_C32_L10_T2/
-│       │   │       │   ├── meta.txt
-│       │   │       │   └── output.txt
-│       │   │       ├── S256_N16_C32_L10_T32/
-│       │   │       │   ├── meta.txt
-│       │   │       │   └── output.txt
-│       │   │       ├── S256_N16_C32_L10_T4/
-│       │   │       │   ├── meta.txt
-│       │   │       │   └── output.txt
-│       │   │       ├── S256_N16_C32_L10_T64/
-│       │   │       │   ├── meta.txt
-│       │   │       │   └── output.txt
-│       │   │       └── S256_N16_C32_L10_T8/
-│       │   │           ├── meta.txt
-│       │   │           └── output.txt
-│       │   ├── reduction/
-│       │   │   └── aff/
-│       │   │       ├── S256_N16_C32_L10_T1/
-│       │   │       │   ├── meta.txt
-│       │   │       │   └── output.txt
-│       │   │       ├── S256_N16_C32_L10_T16/
-│       │   │       │   ├── meta.txt
-│       │   │       │   └── output.txt
-│       │   │       ├── S256_N16_C32_L10_T2/
-│       │   │       │   ├── meta.txt
-│       │   │       │   └── output.txt
-│       │   │       ├── S256_N16_C32_L10_T32/
-│       │   │       │   ├── meta.txt
-│       │   │       │   └── output.txt
-│       │   │       ├── S256_N16_C32_L10_T4/
-│       │   │       │   ├── meta.txt
-│       │   │       │   └── output.txt
-│       │   │       ├── S256_N16_C32_L10_T64/
-│       │   │       │   ├── meta.txt
-│       │   │       │   └── output.txt
-│       │   │       ├── S256_N16_C32_L10_T8/
-│       │   │       │   ├── meta.txt
-│       │   │       │   └── output.txt
-│       │   │       ├── S256_N1_C4_L10_T1/
-│       │   │       │   ├── meta.txt
-│       │   │       │   └── output.txt
-│       │   │       ├── S256_N1_C4_L10_T16/
-│       │   │       │   ├── meta.txt
-│       │   │       │   └── output.txt
-│       │   │       ├── S256_N1_C4_L10_T2/
-│       │   │       │   ├── meta.txt
-│       │   │       │   └── output.txt
-│       │   │       ├── S256_N1_C4_L10_T32/
-│       │   │       │   ├── meta.txt
-│       │   │       │   └── output.txt
-│       │   │       ├── S256_N1_C4_L10_T4/
-│       │   │       │   ├── meta.txt
-│       │   │       │   └── output.txt
-│       │   │       ├── S256_N1_C4_L10_T64/
-│       │   │       │   ├── meta.txt
-│       │   │       │   └── output.txt
-│       │   │       └── S256_N1_C4_L10_T8/
-│       │   │           ├── meta.txt
-│       │   │           └── output.txt
-│       │   └── serial/
-│       │       ├── aff/
-│       │       │   ├── S256_N16_C32_L10_T1/
-│       │       │   │   ├── meta.txt
-│       │       │   │   └── output.txt
-│       │       │   └── S256_N1_C4_L10_T1/
-│       │       │       ├── meta.txt
-│       │       │       └── output.txt
-│       │       └── noaff/
-│       │           └── S256_N16_C32_L10_T1/
-│       │               ├── meta.txt
-│       │               └── output.txt
-│       ├── diagrams/
-│       │   ├── images/
-│       │   │   ├── 2.1.1_reduction_speedup.png
-│       │   │   ├── 2.1.1_reduction_speedup_par1.png
-│       │   │   ├── 2.1.1_reduction_time.png
-│       │   │   ├── 2.1.1_shared_speedup.png
-│       │   │   ├── 2.1.1_shared_speedup_par1.png
-│       │   │   ├── 2.1.1_shared_time.png
-│       │   │   ├── 2.1.2_reduction_speedup.png
-│       │   │   ├── 2.1.2_reduction_speedup_par1.png
-│       │   │   ├── 2.1.2_reduction_time.png
-│       │   │   ├── 2.1.2_shared_speedup.png
-│       │   │   ├── 2.1.2_shared_speedup_par1.png
-│       │   │   └── 2.1.2_shared_time.png
-│       │   ├── results/
-│       │   │   ├── results_2.1.1_reduction.txt
-│       │   │   ├── results_2.1.1_shared.txt
-│       │   │   ├── results_2.1.2_reduction.txt
-│       │   │   └── results_2.1.2_shared.txt
-│       │   ├── results_2.1.1_reduction.py
-│       │   ├── results_2.1.1_shared.py
-│       │   ├── results_2.1.2_reduction.py
-│       │   └── results_2.1.2_shared.py
-│       ├── file_io.c
-│       ├── file_io.o
-│       ├── kmeans.h
-│       ├── main.c
-│       ├── main.o
-│       ├── make_kmeans.err
-│       ├── make_kmeans.out
-│       ├── make_on_queue.sh
-│       ├── Makefile
-│       ├── omp_naive_kmeans.c
-│       ├── omp_naive_kmeans.o
-│       ├── omp_reduction_kmeans.c
-│       ├── omp_reduction_kmeans.o
-│       ├── run_kmeans.err
-│       ├── run_kmeans.out
-│       ├── run_on_queue.sh
-│       ├── seq_kmeans.c
-│       ├── seq_kmeans.o
-│       ├── util.c
-│       └── util.o
+│   ├── kmeans/
+│   │   ├── benchmarks/
+│   │   │   ├── naive/
+│   │   │   │   ├── aff/
+│   │   │   │   │   ├── S256_N16_C32_L10_T1/
+│   │   │   │   │   │   ├── meta.txt
+│   │   │   │   │   │   └── output.txt
+│   │   │   │   │   ├── S256_N16_C32_L10_T16/
+│   │   │   │   │   │   ├── meta.txt
+│   │   │   │   │   │   └── output.txt
+│   │   │   │   │   ├── S256_N16_C32_L10_T2/
+│   │   │   │   │   │   ├── meta.txt
+│   │   │   │   │   │   └── output.txt
+│   │   │   │   │   ├── S256_N16_C32_L10_T32/
+│   │   │   │   │   │   ├── meta.txt
+│   │   │   │   │   │   └── output.txt
+│   │   │   │   │   ├── S256_N16_C32_L10_T4/
+│   │   │   │   │   │   ├── meta.txt
+│   │   │   │   │   │   └── output.txt
+│   │   │   │   │   ├── S256_N16_C32_L10_T64/
+│   │   │   │   │   │   ├── meta.txt
+│   │   │   │   │   │   └── output.txt
+│   │   │   │   │   └── S256_N16_C32_L10_T8/
+│   │   │   │   │       ├── meta.txt
+│   │   │   │   │       └── output.txt
+│   │   │   │   └── noaff/
+│   │   │   │       ├── S256_N16_C32_L10_T1/
+│   │   │   │       │   ├── meta.txt
+│   │   │   │       │   └── output.txt
+│   │   │   │       ├── S256_N16_C32_L10_T16/
+│   │   │   │       │   ├── meta.txt
+│   │   │   │       │   └── output.txt
+│   │   │   │       ├── S256_N16_C32_L10_T2/
+│   │   │   │       │   ├── meta.txt
+│   │   │   │       │   └── output.txt
+│   │   │   │       ├── S256_N16_C32_L10_T32/
+│   │   │   │       │   ├── meta.txt
+│   │   │   │       │   └── output.txt
+│   │   │   │       ├── S256_N16_C32_L10_T4/
+│   │   │   │       │   ├── meta.txt
+│   │   │   │       │   └── output.txt
+│   │   │   │       ├── S256_N16_C32_L10_T64/
+│   │   │   │       │   ├── meta.txt
+│   │   │   │       │   └── output.txt
+│   │   │   │       └── S256_N16_C32_L10_T8/
+│   │   │   │           ├── meta.txt
+│   │   │   │           └── output.txt
+│   │   │   ├── reduction/
+│   │   │   │   └── aff/
+│   │   │   │       ├── S256_N16_C32_L10_T1/
+│   │   │   │       │   ├── meta.txt
+│   │   │   │       │   └── output.txt
+│   │   │   │       ├── S256_N16_C32_L10_T16/
+│   │   │   │       │   ├── meta.txt
+│   │   │   │       │   └── output.txt
+│   │   │   │       ├── S256_N16_C32_L10_T2/
+│   │   │   │       │   ├── meta.txt
+│   │   │   │       │   └── output.txt
+│   │   │   │       ├── S256_N16_C32_L10_T32/
+│   │   │   │       │   ├── meta.txt
+│   │   │   │       │   └── output.txt
+│   │   │   │       ├── S256_N16_C32_L10_T4/
+│   │   │   │       │   ├── meta.txt
+│   │   │   │       │   └── output.txt
+│   │   │   │       ├── S256_N16_C32_L10_T64/
+│   │   │   │       │   ├── meta.txt
+│   │   │   │       │   └── output.txt
+│   │   │   │       ├── S256_N16_C32_L10_T8/
+│   │   │   │       │   ├── meta.txt
+│   │   │   │       │   └── output.txt
+│   │   │   │       ├── S256_N1_C4_L10_T1/
+│   │   │   │       │   ├── meta.txt
+│   │   │   │       │   └── output.txt
+│   │   │   │       ├── S256_N1_C4_L10_T16/
+│   │   │   │       │   ├── meta.txt
+│   │   │   │       │   └── output.txt
+│   │   │   │       ├── S256_N1_C4_L10_T2/
+│   │   │   │       │   ├── meta.txt
+│   │   │   │       │   └── output.txt
+│   │   │   │       ├── S256_N1_C4_L10_T32/
+│   │   │   │       │   ├── meta.txt
+│   │   │   │       │   └── output.txt
+│   │   │   │       ├── S256_N1_C4_L10_T4/
+│   │   │   │       │   ├── meta.txt
+│   │   │   │       │   └── output.txt
+│   │   │   │       ├── S256_N1_C4_L10_T64/
+│   │   │   │       │   ├── meta.txt
+│   │   │   │       │   └── output.txt
+│   │   │   │       └── S256_N1_C4_L10_T8/
+│   │   │   │           ├── meta.txt
+│   │   │   │           └── output.txt
+│   │   │   └── serial/
+│   │   │       ├── aff/
+│   │   │       │   ├── S256_N16_C32_L10_T1/
+│   │   │       │   │   ├── meta.txt
+│   │   │       │   │   └── output.txt
+│   │   │       │   └── S256_N1_C4_L10_T1/
+│   │   │       │       ├── meta.txt
+│   │   │       │       └── output.txt
+│   │   │       └── noaff/
+│   │   │           └── S256_N16_C32_L10_T1/
+│   │   │               ├── meta.txt
+│   │   │               └── output.txt
+│   │   ├── diagrams/
+│   │   │   ├── images/
+│   │   │   │   ├── 2.1.1_reduction_speedup.png
+│   │   │   │   ├── 2.1.1_reduction_speedup_par1.png
+│   │   │   │   ├── 2.1.1_reduction_time.png
+│   │   │   │   ├── 2.1.1_shared_speedup.png
+│   │   │   │   ├── 2.1.1_shared_speedup_par1.png
+│   │   │   │   ├── 2.1.1_shared_time.png
+│   │   │   │   ├── 2.1.2_reduction_speedup.png
+│   │   │   │   ├── 2.1.2_reduction_speedup_par1.png
+│   │   │   │   ├── 2.1.2_reduction_time.png
+│   │   │   │   ├── 2.1.2_shared_speedup.png
+│   │   │   │   ├── 2.1.2_shared_speedup_par1.png
+│   │   │   │   └── 2.1.2_shared_time.png
+│   │   │   ├── results/
+│   │   │   │   ├── results_2.1.1_reduction.txt
+│   │   │   │   ├── results_2.1.1_shared.txt
+│   │   │   │   ├── results_2.1.2_reduction.txt
+│   │   │   │   └── results_2.1.2_shared.txt
+│   │   │   ├── results_2.1.1_reduction.py
+│   │   │   ├── results_2.1.1_shared.py
+│   │   │   ├── results_2.1.2_reduction.py
+│   │   │   └── results_2.1.2_shared.py
+│   │   ├── file_io.c
+│   │   ├── file_io.o
+│   │   ├── kmeans.h
+│   │   ├── main.c
+│   │   ├── main.o
+│   │   ├── make_kmeans.err
+│   │   ├── make_kmeans.out
+│   │   ├── make_on_queue.sh
+│   │   ├── Makefile
+│   │   ├── omp_naive_kmeans.c
+│   │   ├── omp_naive_kmeans.o
+│   │   ├── omp_reduction_kmeans.c
+│   │   ├── omp_reduction_kmeans.o
+│   │   ├── run_kmeans.err
+│   │   ├── run_kmeans.out
+│   │   ├── run_on_queue.sh
+│   │   ├── seq_kmeans.c
+│   │   ├── seq_kmeans.o
+│   │   ├── util.c
+│   │   └── util.o
+│   └── README.md
 ├── a3/
 │   ├── benchmarks/
 │   │   ├── array_lock/
@@ -518,6 +520,7 @@ Parallel_Processing_Systems/
 │   ├── omp_lock_kmeans.o
 │   ├── omp_naive_kmeans.c
 │   ├── omp_naive_kmeans.o
+│   ├── README.md
 │   ├── run_kmeans_locks.err
 │   ├── run_kmeans_locks.out
 │   ├── run_on_queue.sh
@@ -1226,8 +1229,9 @@ Parallel_Processing_Systems/
 │   │   │   ├── throughput_S8192_W20_40_40.png
 │   │   │   └── throughput_S8192_W80_10_10.png
 │   │   └── plot_results.py
-│   └── docs/
-│       └── pps_exercises_2025_2026.pdf
+│   ├── docs/
+│   │   └── pps_exercises_2025_2026.pdf
+│   └── README.md
 ├── a5/
 │   ├── diagrams/
 │   │   ├── images/
@@ -1279,6 +1283,7 @@ Parallel_Processing_Systems/
 │   ├── make_kmeans.out
 │   ├── make_on_queue.sh
 │   ├── Makefile
+│   ├── README.md
 │   ├── run_on_queue.sh
 │   ├── seq_kmeans.c
 │   ├── validate.err
@@ -1286,11 +1291,92 @@ Parallel_Processing_Systems/
 │   ├── validate_on_queue.sh
 │   └── validation_results.txt
 ├── a6/
-│   ├── benchmarks/
 │   ├── diagrams/
-│   └── docs/
-│       ├── askisi4-2025-2026.pdf
-│       └── pps_exercises_2025_2026.pdf
+│   │   ├── images/
+│   │   │   ├── heat_transfer/
+│   │   │   │   ├── jacobi_convergence_512_p64.png
+│   │   │   │   ├── jacobi_speedup_2048.png
+│   │   │   │   ├── jacobi_speedup_4096.png
+│   │   │   │   ├── jacobi_speedup_6144.png
+│   │   │   │   ├── jacobi_times_2048_p16.png
+│   │   │   │   ├── jacobi_times_2048_p32.png
+│   │   │   │   ├── jacobi_times_2048_p64.png
+│   │   │   │   ├── jacobi_times_2048_p8.png
+│   │   │   │   ├── jacobi_times_4096_p16.png
+│   │   │   │   ├── jacobi_times_4096_p32.png
+│   │   │   │   ├── jacobi_times_4096_p64.png
+│   │   │   │   ├── jacobi_times_4096_p8.png
+│   │   │   │   ├── jacobi_times_6144_p16.png
+│   │   │   │   ├── jacobi_times_6144_p32.png
+│   │   │   │   ├── jacobi_times_6144_p64.png
+│   │   │   │   └── jacobi_times_6144_p8.png
+│   │   │   └── kmeans/
+│   │   │       ├── kmeans_speedup.png
+│   │   │       └── kmeans_time.png
+│   │   ├── diagrams_heat_transfer.py
+│   │   └── diagrams_kmeans.py
+│   ├── docs/
+│   │   ├── askisi4-2025-2026.pdf
+│   │   └── pps_exercises_2025_2026.pdf
+│   ├── heat_transfer/
+│   │   ├── mpi/
+│   │   │   ├── error_benchmark.txt
+│   │   │   ├── gauss_mpi
+│   │   │   ├── jacobi_mpi
+│   │   │   ├── make_error.txt
+│   │   │   ├── make_on_queue.sh
+│   │   │   ├── make_output.txt
+│   │   │   ├── Makefile
+│   │   │   ├── mpi_gauss.c
+│   │   │   ├── mpi_jacobi.c
+│   │   │   ├── mpi_redblack.c
+│   │   │   ├── redblack_mpi
+│   │   │   ├── results_benchmark.txt
+│   │   │   ├── run_on_queue.sh
+│   │   │   ├── utils.c
+│   │   │   └── utils.h
+│   │   ├── serial/
+│   │   │   ├── gauss_serial
+│   │   │   ├── GaussSeidelSOR_serial.c
+│   │   │   ├── jacobi_serial
+│   │   │   ├── Jacobi_serial.c
+│   │   │   ├── make_on_queue.sh
+│   │   │   ├── Makefile
+│   │   │   ├── redblack_serial
+│   │   │   ├── RedBlackSOR_serial.c
+│   │   │   ├── run_on_queue.sh
+│   │   │   ├── utils.c
+│   │   │   └── utils.h
+│   │   ├── validate_error.txt
+│   │   ├── validate_on_queue.sh
+│   │   └── validate_output.txt
+│   ├── kmeans/
+│   │   ├── benchmarks_kmeans/
+│   │   │   ├── kmeans_np1.txt
+│   │   │   ├── kmeans_np16.txt
+│   │   │   ├── kmeans_np2.txt
+│   │   │   ├── kmeans_np32.txt
+│   │   │   ├── kmeans_np4.txt
+│   │   │   ├── kmeans_np64.txt
+│   │   │   └── kmeans_np8.txt
+│   │   ├── error_kmeans
+│   │   ├── errormakejob
+│   │   ├── file_io.c
+│   │   ├── file_io.o
+│   │   ├── kmeans.c
+│   │   ├── kmeans.h
+│   │   ├── kmeans.o
+│   │   ├── kmeans_mpi
+│   │   ├── main.c
+│   │   ├── main.o
+│   │   ├── make_on_queue.sh
+│   │   ├── Makefile
+│   │   ├── out_kmeans
+│   │   ├── outmakejob
+│   │   ├── run_on_queue.sh
+│   │   ├── util.c
+│   │   └── util.o
+│   └── README.md
 ├── docs/
 │   ├── lecture_slides/
 │   │   ├── MPI.pdf
@@ -1310,59 +1396,72 @@ Parallel_Processing_Systems/
 │   ├── project_structure/
 │   │   ├── project_struct.py
 │   │   └── project_struct.txt
-│   └── reports/
-│       ├── final/
-│       │   └── parlab05_report_a1-a5_final.pdf
-│       ├── individual/
-│       │   ├── a1/
-│       │   │   ├── report_misc/
-│       │   │   │   ├── life_par.c.pdf
-│       │   │   │   ├── make_on_queue.sh.pdf
-│       │   │   │   ├── Makefile.pdf
-│       │   │   │   └── run_on_queue.sh.pdf
-│       │   │   ├── parlab05_report_a1.docx
-│       │   │   ├── parlab05_report_a1.pdf
-│       │   │   └── parlab05_report_a1_final.pdf
-│       │   ├── a2/
-│       │   │   ├── report_misc/
-│       │   │   │   ├── FW/
-│       │   │   │   │   ├── fw_sr_p.c.pdf
-│       │   │   │   │   └── run_on_queue.sh.pdf
-│       │   │   │   └── kmeans/
-│       │   │   │       ├── file_io.c.pdf
-│       │   │   │       ├── make_on_queue.sh.pdf
-│       │   │   │       ├── Makefile.pdf
-│       │   │   │       ├── omp_naive_kmeans.c.pdf
-│       │   │   │       ├── omp_reduction_kmeans.c.pdf
-│       │   │   │       └── run_on_queue.sh.pdf
-│       │   │   ├── parlab05_report_a2.docx
-│       │   │   ├── parlab05_report_a2.pdf
-│       │   │   └── parlab05_report_a2_final.pdf
-│       │   ├── a3/
-│       │   │   ├── report_misc/
-│       │   │   │   └── run_on_queue.sh.pdf
-│       │   │   ├── parlab05_report_a3.docx
-│       │   │   ├── parlab05_report_a3.pdf
-│       │   │   └── parlab05_report_a3_final.pdf
-│       │   ├── a4/
-│       │   │   ├── report_misc/
-│       │   │   │   └── run_on_queue.sh.pdf
-│       │   │   ├── parlab05_report_a4.docx
-│       │   │   ├── parlab05_report_a4.pdf
-│       │   │   ├── parlab05_report_a4_final.pdf
-│       │   │   └── Αναφορά Ανδρέα.docx
-│       │   ├── a5/
-│       │   │   ├── report_misc/
-│       │   │   │   ├── cuda_kmeans_all_gpu.cu.pdf
-│       │   │   │   ├── cuda_kmeans_naive.cu.pdf
-│       │   │   │   ├── cuda_kmeans_shared.cu.pdf
-│       │   │   │   └── cuda_kmeans_transpose.cu.pdf
-│       │   │   ├── parlab05_report_a5.docx
-│       │   │   ├── parlab05_report_a5.pdf
-│       │   │   └── parlab05_report_a5_final.pdf
-│       │   └── a6/
-│       │       └── report_misc/
-│       └── parlab05 - report_template.docx
+│   ├── reports/
+│   │   ├── final/
+│   │   │   ├── parlab05_report_a1-a2_final.pdf
+│   │   │   ├── parlab05_report_a1-a3_final.pdf
+│   │   │   ├── parlab05_report_a1-a4_final.pdf
+│   │   │   ├── parlab05_report_a1-a5_final.pdf
+│   │   │   ├── parlab05_report_a1-a6_final.pdf
+│   │   │   └── parlab05_report_a1_final.pdf
+│   │   ├── individual/
+│   │   │   ├── a1/
+│   │   │   │   ├── report_misc/
+│   │   │   │   │   ├── life_par.c.pdf
+│   │   │   │   │   ├── make_on_queue.sh.pdf
+│   │   │   │   │   ├── Makefile.pdf
+│   │   │   │   │   └── run_on_queue.sh.pdf
+│   │   │   │   ├── parlab05_report_a1.docx
+│   │   │   │   ├── parlab05_report_a1.pdf
+│   │   │   │   └── parlab05_report_a1_final.pdf
+│   │   │   ├── a2/
+│   │   │   │   ├── report_misc/
+│   │   │   │   │   ├── FW/
+│   │   │   │   │   │   ├── fw_sr_p.c.pdf
+│   │   │   │   │   │   └── run_on_queue.sh.pdf
+│   │   │   │   │   └── kmeans/
+│   │   │   │   │       ├── file_io.c.pdf
+│   │   │   │   │       ├── make_on_queue.sh.pdf
+│   │   │   │   │       ├── Makefile.pdf
+│   │   │   │   │       ├── omp_naive_kmeans.c.pdf
+│   │   │   │   │       ├── omp_reduction_kmeans.c.pdf
+│   │   │   │   │       └── run_on_queue.sh.pdf
+│   │   │   │   ├── parlab05_report_a2.docx
+│   │   │   │   ├── parlab05_report_a2.pdf
+│   │   │   │   └── parlab05_report_a2_final.pdf
+│   │   │   ├── a3/
+│   │   │   │   ├── report_misc/
+│   │   │   │   │   └── run_on_queue.sh.pdf
+│   │   │   │   ├── parlab05_report_a3.docx
+│   │   │   │   ├── parlab05_report_a3.pdf
+│   │   │   │   └── parlab05_report_a3_final.pdf
+│   │   │   ├── a4/
+│   │   │   │   ├── report_misc/
+│   │   │   │   │   └── run_on_queue.sh.pdf
+│   │   │   │   ├── parlab05_report_a4.docx
+│   │   │   │   ├── parlab05_report_a4.pdf
+│   │   │   │   ├── parlab05_report_a4_final.pdf
+│   │   │   │   └── Αναφορά Ανδρέα.docx
+│   │   │   ├── a5/
+│   │   │   │   ├── report_misc/
+│   │   │   │   │   ├── cuda_kmeans_all_gpu.cu.pdf
+│   │   │   │   │   ├── cuda_kmeans_naive.cu.pdf
+│   │   │   │   │   ├── cuda_kmeans_shared.cu.pdf
+│   │   │   │   │   └── cuda_kmeans_transpose.cu.pdf
+│   │   │   │   ├── parlab05_report_a5.docx
+│   │   │   │   ├── parlab05_report_a5.pdf
+│   │   │   │   └── parlab05_report_a5_final.pdf
+│   │   │   └── a6/
+│   │   │       ├── report_misc/
+│   │   │       │   ├── file_io.c.pdf
+│   │   │       │   ├── kmeans.c.pdf
+│   │   │       │   ├── main.c.pdf
+│   │   │       │   └── mpi_jacobi.c.pdf
+│   │   │       ├── parlab05_report_a6.docx
+│   │   │       ├── parlab05_report_a6.pdf
+│   │   │       └── parlab05_report_a6_final.pdf
+│   │   └── parlab05 - report_template.docx
+│   └── README.md
 ├── shell_scripts/
 │   ├── mount_orion.sh
 │   ├── push_to_orion.sh
@@ -1373,4 +1472,4 @@ Parallel_Processing_Systems/
 ├── LICENSE
 └── README.md
 
-Total directories: 180, Total files: 1194
+Total directories: 187, Total files: 1286
